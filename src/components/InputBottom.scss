@@ -1,0 +1,40 @@
+.input-bottom{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+
+    .buttons{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40%;
+
+        .button{
+            width: 20px;
+            height: 20px;
+            border-radius: 20%;
+        }
+
+        .red{
+            background-color: rgba(240,85,85,0.8);
+        }
+
+        .green{
+            background-color: rgba(146, 240, 126, 0.8);
+        }
+
+        .blue{
+            background-color: rgb(23, 157, 204,0.8);
+        }
+
+        .yellow{
+            background-color: rgb(255, 255, 139,0.8);
+        }
+    }
+
+    .add-note{
+        border-radius: 10px;
+        width: 80px;
+    }
+}

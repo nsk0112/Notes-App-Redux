@@ -1,0 +1,17 @@
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: rgb(200, 200, 200);
+
+    input{
+        width: 80%;
+        height: 40px;
+        border-color: rgb(150, 150, 150);
+        border-radius: 15px;
+        border-style: solid;
+    }
+}

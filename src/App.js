@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Input from './components/Input';
+import InputBottom from './components/InputBottom';
+import Notes from './components/Notes';
+import Search from './components/Search';
+import { useSelector } from "react-redux";
 
 function App() {
+  const bgColor = useSelector(state => state.notes.activeColor);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='left' style={{ backgroundColor: bgColor }}>
+        <Input />
+        <InputBottom />
+      </div>
+      <div className='right'>
+        <Search />
+        <Notes />
+      </div>
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.notes {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .note {
+        padding: 5px;
+        width: 40%;
+        height: auto;
+
+        .text {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            padding: 10px;
+
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
